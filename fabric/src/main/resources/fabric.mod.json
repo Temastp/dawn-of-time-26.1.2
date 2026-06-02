@@ -8,8 +8,8 @@
         "${mod_author}"
     ],
     "contact": {
-        "homepage": "https://fabricmc.net/",
-        "sources": "https://github.com/FabricMC/fabric-example-mod"
+        "homepage": "https://github.com/Temastp/dawn-of-time-26.1.2",
+        "sources": "https://github.com/Temastp/dawn-of-time-26.1.2"
     },
     "license": "${license}",
     "icon": "icon.png",
@@ -27,13 +27,12 @@
         "${mod_id}.mixins.json"
     ],
     "depends": {
-        "fabricloader": ">=0.14",
+        "fabricloader": ">=0.16.15",
         "fabric": "*",
         "minecraft": "${minecraft_version}",
-        "java": ">=17"
+        "java": ">=25"
     },
     "suggests": {
         "another-mod": "*"
     }
 }
-  
