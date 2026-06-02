@@ -31,14 +31,12 @@ repositories {
 
 dependencies {
     minecraft "com.mojang:minecraft:${minecraft_version}"
-   mappings loom.layered {
-    parchment("org.parchmentmc.data:parchment-${parchment_minecraft}:${parchment_version}@zip")
-    // Entferne officialMojangMappings() - das existiert noch nicht für 26.1.2
-}
+    mappings loom.layered {
+        parchment("org.parchmentmc.data:parchment-${parchment_minecraft}:${parchment_version}@zip")
     }
     modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
-    // TODO: Update these dependencies for 26.1.2
+    // TODO: Update these for 26.1.2
     // modImplementation "maven.modrinth:fusion-connected-textures:1.1.1-fabric-mc1.20.1"
     // modImplementation "curse.maven:jei-238222:6600226"
     implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.1'
