@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.13-SNAPSHOT' apply(false)
+    id 'fabric-loom' version '1.16-SNAPSHOT' apply(false)
     id 'net.neoforged.moddev.legacyforge' version '2.0.106' apply(false)
     id "me.modmuss50.mod-publish-plugin" version "1.1.0" apply(false)
 }
@@ -18,7 +18,7 @@ configure([project(":fabric"), project(":forge")]) {
     publishMods {
         changelog = patchNoteProvider
         type = STABLE
-        displayName = "${rootProject.property("mod_name")} ${rootProject.property("minecraft_version")} v${rootProject.property("version")}"
+        displayName = "${rootProject.property("mod_name")} ${rootProject.property("minecraft_version")} v${rootProject.property("version")}" 
 
         curseforge {
             projectId = "312359"
